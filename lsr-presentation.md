@@ -78,6 +78,10 @@ I carried out a meta-analysis of 12 of the 15 case-control studies; pooled PAF e
 | Agricultural dusts | 5                  | 1.6 (0.8-3.0)      | 4 (0-12)               |
 | Silica             | 8                  | 1.7 (1.2-2.4)      | 3 (2-5)                |
 
+##
+
+![](images/forest_plot_vgdf_ipf.jpeg)
+
 # Does it matter? 
 
 ##
@@ -116,7 +120,7 @@ Recruitment
 
 - All [19 organisations](https://batchgeo.com/map/3fe51a6c9576af5379b7cb7604ce9b82) are recruiting
 - 281 cases and 101 controls recruited as of June 1st
-- Big range in recruitment between centres from Liverpool (61) to Glasgow (2).
+- Big range in [recruitment](http://ipfjes.org/) between centres from Liverpool (61) to Glasgow (2).
 
 ##
 
@@ -124,8 +128,8 @@ Lab work
 
 ##
 
-- DNA extracted for 39 participants to date.
-- No participants genotyped yet.
+- DNA extracted for 39 participants to date, reasonable DNA yield   
+- No participants genotyped yet
 
 ##
 
@@ -133,7 +137,93 @@ Interim analysis
 
 ##
 
-- blah blah
+
+## Number of cases and controls
+
+281 cases, 101 controls
+
+## Age breakdown
+
+    count       mean       std   min   25%   50%   75%   max
+    pt                                                               
+    case     281.0  74.790036  7.773722  52.0  70.0  75.0  80.0  92.0
+    control  101.0  70.722772  8.159802  40.0  66.0  70.0  76.0  93.0
+
+## Ethnicity
+
+272 cases white, 1 black british, 1 mixed. 99 controls white, 1 asian british, 1 other.
+
+## Ever smoked
+
+210 cases (75%) and 71 (70%) of controls were current or previous smokers.
+
+## Current smoker
+
+6 cases (2%) and 8 controls (8%) were current smokers.
+
+## Social class (based on all jobs)
+
+    count      mean       std  min  25%  50%  75%  max
+    pt                                                          
+    case     1268.0  4.643297  2.027945  1.1  3.0  5.0  6.0  7.0
+    control   419.0  4.518616  2.085949  1.1  3.0  5.0  7.0  7.0
+
+## Social class (based on lowest social class code job)
+
+    count      mean       std  min  25%  50%  75%  max
+    pt                                                         
+    case     281.0  3.157651  1.816124  1.1  2.0  3.0  5.0  7.0
+    control  101.0  2.955446  1.684012  1.1  1.2  2.0  4.0  7.0
+
+## Asbestos exposed job(%) of all jobs (according to Coggon)
+
+    pt
+    case       20.215219
+    control    19.014085
+    Name: patient_id, dtype: float64
+
+## Asbestos exposed job(%) of all jobs(according to Peto)
+
+    pt
+    case       10.530361
+    control     8.685446
+    Name: patient_id, dtype: float64
+
+## Patients with at least 1 asbestos exposed job(%) (according to Coggon)
+
+    pt
+    case       45.907473
+    control    45.544554
+    Name: patient_id, dtype: float64
+
+## Patients with at least 1 asbestos exposed job(%) (according to Peto)
+
+    pt
+    case       25.266904
+    control    24.752475
+    Name: patient_id, dtype: float64
+
+## Average cummulative risk
+
+    pt
+    case       9.096085
+    control    8.742574
+    dtype: float64
+
+## OR for IPF if at least 1 asbestos exposed job (according to Coggon)
+
+    OddsR:  1.0147311212814645 p-Value: 1.0
+
+## Distance from centre (study av) in km
+
+    pt
+    case       26.740122
+    control    14.631911
+    Name: distfromcentre, dtype: float64
+
+## Sensitivity analysis
+
+Limiting the analysis to participants living within 10km of the recruiting hospital (74 cases, 47 controls) resulted in a increase in the percentage of exposed jobs for cases (25%) but not controls (19%). By direct simulation this was not a statistically significant difference.
 
 # Future work
 
@@ -141,6 +231,7 @@ Interim analysis
 
 - complete recruitment and interviews
 - complete DNA extraction and genotyping
+- finalize analysis plans and carry out analysis
 - write papers
 
 # Any questions?
