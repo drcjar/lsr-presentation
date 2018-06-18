@@ -101,10 +101,6 @@ I carried out a meta-analysis of 12 of the 15 case-control studies; pooled PAF e
 
 ##
 
-Historic asbestos exposure assessment 
-
-##
-
 I searched pubmed, embase, and google scholar for combinations and synonyms of "asbestos", "exposure assessment", together with terms for modes of assessment including "lung biopsy", "bronchoalveolar lavage", "exposure reconstruction", and "job-exposure matrix". When relevant papers were identified, papers referenced, and papers citing, the paper were reviewed.
 
 ##
