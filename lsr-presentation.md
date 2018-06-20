@@ -56,7 +56,7 @@ He worked as industrial lagger in power stations and railways for 40 years. Wife
 
 ## 
 
-To address the question of asbestos exposure in IPF in this thesis I carry out a literature review and meta-analysis of occupational exposures in IPF, a literature review of historic asbestos exposure assessment, and a hospital based case-control study: the idiopathic pulmonary fibrosis job exposures study (IPFJES).
+To address the question of asbestos exposure in IPF in this thesis I am carrying out a literature review and meta-analysis of occupational exposures in IPF, a literature review of historic asbestos exposure assessment, and a hospital based case-control study: the idiopathic pulmonary fibrosis job exposures study (IPFJES).
 
 # 2. Looking at how much IPF is attributable to occupational exposures
 
@@ -66,7 +66,7 @@ Literature review and meta-analysis
 
 ## 
 
-I searched pubmed, embase, and google scholar for combinations of the terms 'idiopathic pulmonary fibrosis', 'occupation', 'case-control study' and synonyms. When relevant papers were identified, papers referenced, and papers citing, the paper were reviewed. Medline ranker and bespoke pubmed 'mining' techniques that I developed as part of this thesis were also used. 
+I searched pubmed, embase, and google scholar for combinations of the terms 'idiopathic pulmonary fibrosis', 'occupation', 'case-control study' and synonyms. When a relevant paper was identified, papers referenced, and papers citing, the paper were reviewed. Medline ranker and bespoke pubmed 'mining' techniques that I developed as part of this thesis were also used. 
 
 ##
 
@@ -82,6 +82,13 @@ I carried out a meta-analysis of 12 of the 15 case-control studies; pooled PAF e
 
 ##
 
+- PAF = pc(OR - 1) / OR, where pc is the proportion of cases exposed and OR is the odds ratio
+- Stata metan and metaprop used to calculate pooled OR and PAF respectively
+- The 95\% confidence interval for the OR and PAF from each study included was computed using exact method
+- Fixed effect model where heterogeneity low, random effects model where heterogeneity high
+
+##
+
 | Exposure           | Risk estimates (n) | Pooled OR (95% CI) | Pooled PAF \% (95% CI) |
 |--------------------|--------------------|--------------------|------------------------|
 | VGDF               | 7                  | 1.7 (1.2-2.5)      | 23 (11-35)             |
@@ -90,18 +97,12 @@ I carried out a meta-analysis of 12 of the 15 case-control studies; pooled PAF e
 | Agricultural dusts | 5                  | 1.6 (0.8-3.0)      | 4 (0-12)               |
 | Silica             | 8                  | 1.7 (1.2-2.4)      | 3 (2-5)                |
 
-##
-
-- PAF = pc(OR - 1) / OR, where pc is the proportion of cases exposed and OR is the odds
-- Stata metan and metaprop used to calculate pooled OR and PAF respectively
-- The 95\% confidence interval for the OR and PAF from each study included was computed using exact method
-- Fixed effect model where heterogeneity low, random effects model where heterogeneity high
 
 # 3. Thinking about historic asbestos exposure assessment  
 
 ##
 
-I searched pubmed, embase, and google scholar for combinations and synonyms of "asbestos", "exposure assessment", together with terms for modes of assessment including "lung biopsy", "bronchoalveolar lavage", "exposure reconstruction", and "job-exposure matrix". When relevant papers were identified, papers referenced, and papers citing, the paper were reviewed.
+I searched pubmed, embase, and google scholar for combinations and synonyms of "asbestos", "exposure assessment", together with terms for modes of assessment including "lung biopsy", "bronchoalveolar lavage", "exposure reconstruction", and "job-exposure matrix". When a relevant paper was identified, papers referenced, and papers citing, the paper were reviewed.
 
 ##
 
@@ -137,6 +138,7 @@ I searched pubmed, embase, and google scholar for combinations and synonyms of "
   
 ##
 
+- core team of Rupa Sisodia and me (not possible without Rupa)
 - funded by Wellcome Trust and in the NIHR portfolio; all regulatory approvals in place
 - registered [clinicaltrials.gov NCT03211507](https://clinicaltrials.gov/ct2/show/NCT03211507)
 - full study documentation online at [www.ipfjes.org](http://ipfjes.org/)
@@ -180,10 +182,10 @@ since starting in October 2016 I have obtained REC, HRA, and local R&D approvals
 
 ## Age breakdown
 
-    count       mean       std   min   25%   50%   75%   max
+    	    count       mean       std   min   25%   50%   75%   max
     pt                                                               
-    case     281.0  74.8       7.8       52.0  70.0  75.0  80.0  92.0
-    control  101.0  70.7       8.2       40.0  66.0  70.0  76.0  93.0
+    case     281.0      74.8       7.8   52.0  70.0  75.0  80.0  92.0
+    control  101.0      70.7       8.2   40.0  66.0  70.0  76.0  93.0
 
 ## Ethnicity
 
@@ -199,14 +201,14 @@ since starting in October 2016 I have obtained REC, HRA, and local R&D approvals
 
 ## Social class (based on all jobs)
 
-    count      mean       std  min  25%  50%  75%  max
+    	     count  mean       std       min  25%  50%  75%  max
     pt                                                          
     case     1268.0  4.6       2.0       1.1  3.0  5.0  6.0  7.0
     control   419.0  4.5       2.1       1.1  3.0  5.0  7.0  7.0
 
 ## Social class (based on lowest social class code job)
 
-    count      mean       std  min  25%  50%  75%  max
+   	     count      mean      std       min  25%  50%  75%  max
     pt                                                         
     case     281.0  3.2       1.8       1.1  2.0  3.0  5.0  7.0
     control  101.0  3.0       1.7       1.1  1.2  2.0  4.0  7.0

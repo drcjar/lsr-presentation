@@ -81,14 +81,14 @@
 <h2>What I'm doing</h2>
 </section><section id="section-8" class="slide level2">
 <h2></h2>
-<p>To address the question of asbestos exposure in IPF in this thesis I carry out a literature review and meta-analysis of occupational exposures in IPF, a literature review of historic asbestos exposure assessment, and a hospital based case-control study: the idiopathic pulmonary fibrosis job exposures study (IPFJES).</p>
+<p>To address the question of asbestos exposure in IPF in this thesis I am carrying out a literature review and meta-analysis of occupational exposures in IPF, a literature review of historic asbestos exposure assessment, and a hospital based case-control study: the idiopathic pulmonary fibrosis job exposures study (IPFJES).</p>
 </section></section>
 <section><section id="looking-at-how-much-ipf-is-attributable-to-occupational-exposures" class="titleslide slide level1"><h1>2. Looking at how much IPF is attributable to occupational exposures</h1></section><section id="section-9" class="slide level2">
 <h2></h2>
 <p>Literature review and meta-analysis</p>
 </section><section id="section-10" class="slide level2">
 <h2></h2>
-<p>I searched pubmed, embase, and google scholar for combinations of the terms 'idiopathic pulmonary fibrosis', 'occupation', 'case-control study' and synonyms. When relevant papers were identified, papers referenced, and papers citing, the paper were reviewed. Medline ranker and bespoke pubmed 'mining' techniques that I developed as part of this thesis were also used.</p>
+<p>I searched pubmed, embase, and google scholar for combinations of the terms 'idiopathic pulmonary fibrosis', 'occupation', 'case-control study' and synonyms. When a relevant paper was identified, papers referenced, and papers citing, the paper were reviewed. Medline ranker and bespoke pubmed 'mining' techniques that I developed as part of this thesis were also used.</p>
 </section><section id="section-11" class="slide level2">
 <h2></h2>
 <ul>
@@ -102,6 +102,14 @@
 <h2></h2>
 <p>I carried out a meta-analysis of 12 of the 15 case-control studies; pooled PAF estimates by exposure category (metal, wood, agricultural dust, stone, VGDF) ranged from 3%(silica) to 23%(VGDF).</p>
 </section><section id="section-13" class="slide level2">
+<h2></h2>
+<ul>
+<li>PAF = pc(OR - 1) / OR, where pc is the proportion of cases exposed and OR is the odds ratio</li>
+<li>Stata metan and metaprop used to calculate pooled OR and PAF respectively</li>
+<li>The 95% confidence interval for the OR and PAF from each study included was computed using exact method</li>
+<li>Fixed effect model where heterogeneity low, random effects model where heterogeneity high</li>
+</ul>
+</section><section id="section-14" class="slide level2">
 <h2></h2>
 <table>
 <thead>
@@ -145,18 +153,10 @@
 </tr>
 </tbody>
 </table>
-</section><section id="section-14" class="slide level2">
-<h2></h2>
-<ul>
-<li>PAF = pc(OR - 1) / OR, where pc is the proportion of cases exposed and OR is the odds</li>
-<li>Stata metan and metaprop used to calculate pooled OR and PAF respectively</li>
-<li>The 95% confidence interval for the OR and PAF from each study included was computed using exact method</li>
-<li>Fixed effect model where heterogeneity low, random effects model where heterogeneity high</li>
-</ul>
 </section></section>
 <section><section id="thinking-about-historic-asbestos-exposure-assessment" class="titleslide slide level1"><h1>3. Thinking about historic asbestos exposure assessment</h1></section><section id="section-15" class="slide level2">
 <h2></h2>
-<p>I searched pubmed, embase, and google scholar for combinations and synonyms of &quot;asbestos&quot;, &quot;exposure assessment&quot;, together with terms for modes of assessment including &quot;lung biopsy&quot;, &quot;bronchoalveolar lavage&quot;, &quot;exposure reconstruction&quot;, and &quot;job-exposure matrix&quot;. When relevant papers were identified, papers referenced, and papers citing, the paper were reviewed.</p>
+<p>I searched pubmed, embase, and google scholar for combinations and synonyms of &quot;asbestos&quot;, &quot;exposure assessment&quot;, together with terms for modes of assessment including &quot;lung biopsy&quot;, &quot;bronchoalveolar lavage&quot;, &quot;exposure reconstruction&quot;, and &quot;job-exposure matrix&quot;. When a relevant paper was identified, papers referenced, and papers citing, the paper were reviewed.</p>
 </section><section id="section-16" class="slide level2">
 <h2></h2>
 <ul>
@@ -195,6 +195,7 @@
 </section><section id="section-20" class="slide level2">
 <h2></h2>
 <ul>
+<li>core team of Rupa Sisodia and me (not possible without Rupa)</li>
 <li>funded by Wellcome Trust and in the NIHR portfolio; all regulatory approvals in place</li>
 <li>registered <a href="https://clinicaltrials.gov/ct2/show/NCT03211507">clinicaltrials.gov NCT03211507</a></li>
 <li>full study documentation online at <a href="http://ipfjes.org/">www.ipfjes.org</a></li>
@@ -239,10 +240,10 @@
 <p>281 cases, 101 controls</p>
 </section><section id="age-breakdown" class="slide level2">
 <h2>Age breakdown</h2>
-<pre><code>count       mean       std   min   25%   50%   75%   max
+<pre><code>        count       mean       std   min   25%   50%   75%   max
 pt                                                               
-case     281.0  74.8       7.8       52.0  70.0  75.0  80.0  92.0
-control  101.0  70.7       8.2       40.0  66.0  70.0  76.0  93.0</code></pre>
+case     281.0      74.8       7.8   52.0  70.0  75.0  80.0  92.0
+control  101.0      70.7       8.2   40.0  66.0  70.0  76.0  93.0</code></pre>
 </section><section id="ethnicity" class="slide level2">
 <h2>Ethnicity</h2>
 <p>272 cases white, 1 black british, 1 mixed. 99 controls white, 1 asian british, 1 other.</p>
@@ -254,13 +255,13 @@ control  101.0  70.7       8.2       40.0  66.0  70.0  76.0  93.0</code></pre>
 <p>6 cases (2%) and 8 controls (8%) were current smokers.</p>
 </section><section id="social-class-based-on-all-jobs" class="slide level2">
 <h2>Social class (based on all jobs)</h2>
-<pre><code>count      mean       std  min  25%  50%  75%  max
+<pre><code>         count  mean       std       min  25%  50%  75%  max
 pt                                                          
 case     1268.0  4.6       2.0       1.1  3.0  5.0  6.0  7.0
 control   419.0  4.5       2.1       1.1  3.0  5.0  7.0  7.0</code></pre>
 </section><section id="social-class-based-on-lowest-social-class-code-job" class="slide level2">
 <h2>Social class (based on lowest social class code job)</h2>
-<pre><code>count      mean       std  min  25%  50%  75%  max
+<pre><code>     count      mean      std       min  25%  50%  75%  max
 pt                                                         
 case     281.0  3.2       1.8       1.1  2.0  3.0  5.0  7.0
 control  101.0  3.0       1.7       1.1  1.2  2.0  4.0  7.0</code></pre>
