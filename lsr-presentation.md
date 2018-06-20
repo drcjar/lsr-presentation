@@ -165,7 +165,8 @@ since starting in October 2016 I have obtained REC, HRA, and local R&D approvals
 
 ##
 
-![](images/recuritment_of_cases.jpg)
+![](images/recuritment_of_cases.jpg){ width=23% }
+
 
 ## Lab work
 
